@@ -1,0 +1,13 @@
+
+<div class="container text-center" style="background-color:#dce5e2; border-color:#dce5e2 ;">
+        <h4 style="font-family: Arial, Helvetica, sans-serif;color:#474747">Machine Information</h4>      
+    </div>
+<kendo-grid [data]="machine" [height]="430" style="width: 100%;border:1px solid black;" >
+<kendo-grid-column field="MachineID" title="ID"></kendo-grid-column>
+<kendo-grid-column field="Machine_Name" title="Name"></kendo-grid-column>
+<kendo-grid-column field="Details" title="More Info">
+<ng-template kendoGridCellTemplate>
+<button class="btn1" kendoButton (click)="ShowMachineDetails()">Details</button>
+</ng-template>
+</kendo-grid-column> 
+</kendo-grid> 

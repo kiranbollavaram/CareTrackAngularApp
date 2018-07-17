@@ -1,0 +1,86 @@
+<!-- <form *ngFor="let item of machine">
+    <div id="example1" >
+      <div style="text-align:center">
+          <h1>
+            Machine Data for {{item.Machine_Name}}
+          </h1>
+      </div>
+
+   <div>
+      <div id="div1"><label for="IdleTime"><b>Idle Time:</b> {{  item.IdleTime }}</label></div>
+      <div id="div2"><label for="FuelConsumed">Fuel Consumed: {{ item.FuelConsumed}}</label></div>
+      <div id="div3"><label for="MachineHours">Idle Time: {{  item.MachineHours }}</label></div>
+      <div id="div4"> <label for="Tons">Tons: {{ item.Tons}}</label></div>
+  </div>
+
+  <div style="margin-top: 10px;">
+      <div id="div5"><label for="Distance">Fuel Consumed: {{ item.Distance}}</label></div>
+      <div id="div6"><label for="Production">Production: {{ item.Production}}</label></div>
+      <div id="div7"><label for="Productivity">Productivity: {{ item.Productivity}}</label></div>
+      <div id="div8"><label for="NumberofCycles">NumberofCycles: {{ item.NumberofCycles}}</label></div>
+  </div>
+  <button type="button" class="btn btn-default btn-sm">Primary</button>
+    </div>
+</form>  -->
+<div style="height: 470px;">
+    <form *ngFor="let item of machine">        
+        <div class="container text-center" style="background-color:#dce5e2; border-color:#dce5e2 ;">
+            <h4 style="font-family: Arial, Helvetica, sans-serif;color:#474747">Machine Data for {{item.Machine_Name}}</h4>      
+        </div><br/>
+        <div class="row" style="text-align:center;">            
+            <div class="col-xs-6 col-md-3" >
+                    <div class="well" style="background-color: rgba(98, 120, 143, 1);height:70px;width: 150px;color:#ffffff">
+                            <p> {{  item.IdleTime }} <br> Ideal Time </p>
+                           </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="well" style="background-color: rgba(98, 120, 143, 1);height:70px;width: 150px;color:#ffffff">
+                        <p>      {{ item.FuelConsumed}} <br> Fuel Consumed </p>
+                       </div>
+            </div>
+            <br><br><br>
+            <div class="col-xs-6 col-md-3">
+              <div class="well" style="background-color: rgba(98, 120, 143, 1);height:70px;width: 150px;color:#ffffff">
+                    <p>   {{  item.MachineHours }} <br> Machine Hours </p>
+                   </div>
+            </div>                  
+            <div class="col-xs-6 col-md-3">
+              <div class="well" style="background-color: rgba(98, 120, 143, 1);height:70px;width: 150px;color:#ffffff">
+                    <p>  {{ item.Tons}} <br>  Tons</p>
+                   </div>
+            </div>
+            <br><br><br>
+            <div class="col-xs-6 col-md-3">
+                <div class="well" style="background-color: rgba(98, 120, 143, 1);height:70px;width: 150px;color:#ffffff">
+                        <p>    {{ item.Distance}} <br> Machine Hours </p>
+                       </div>
+              </div>                  
+              <div class="col-xs-6 col-md-3">
+                <div class="well" style="background-color: rgba(98, 120, 143, 1);height:70px;width: 150px;color:#ffffff">
+                        <p>    {{ item.Production}} <br>  Production</p>
+                       </div>
+              </div>
+              <br><br><br>
+              <div class="col-xs-6 col-md-3">
+                  <div class="well" style="background-color: rgba(98, 120, 143, 1);height:70px;width: 150px;color:#ffffff">
+                        <p>    {{ item.Productivity}} <br> Productivity </p>
+                       </div>
+                </div>                  
+                <div class="col-xs-6 col-md-3">
+                  <div class="well" style="background-color: rgba(98, 120, 143, 1);height:70px;width: 150px;color:#ffffff">
+                        <p>   {{ item.NumberofCycles}} <br>  NumberofCycles</p>
+                       </div>
+                </div>
+                <br><br><br>
+          </div>
+          <div style="text-align:center;">
+                <input  style="background-color:white;font-family: Arial, Helvetica, sans-serif;border:1px solid #434343;color:#434343;cursor:pointer;font-weight: bold;width: 130px;" type="submit" class="btn" (click)="DisplayGraph()" value = "Display Graph">
+              </div>
+    </form>
+  
+    
+  <br>
+</div>
+
+
+
