@@ -33,7 +33,7 @@ const appRoutes: Routes = [
   {path: 'machine-info-graph', component: MachineInfoGraphComponent},
   {path: 'machine-parameter-list', component: MachineParameterListComponent},
   {path: 'total-machine-graphs', component: TotalMachineGraphsComponent},
-  {path: '', redirectTo: '/machine-list', pathMatch: 'full'}
+  {path: '', redirectTo: '/customer-login', pathMatch: 'full'}
 ];
 
 @NgModule({
