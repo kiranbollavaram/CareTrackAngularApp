@@ -112,7 +112,7 @@ IF EXIST "%DEPLOYMENT_SOURCE%\.angular.json" (
  :: 4. Copy web.config
   IF EXIST "%DEPLOYMENT_SOURCE%\web.config" (
       pushd "%DEPLOYMENT_SOURCE%"
-      call :ExecuteCmd cp web.config dist\CareTrack\
+      call :ExecuteCmd cp web.config dist\
       IF !ERRORLEVEL! NEQ 0 goto error
       popd
 )
