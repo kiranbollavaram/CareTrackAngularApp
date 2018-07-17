@@ -433,7 +433,7 @@ var appRoutes = [
     { path: 'machine-info-graph', component: _machine_info_graph_machine_info_graph_component__WEBPACK_IMPORTED_MODULE_19__["MachineInfoGraphComponent"] },
     { path: 'machine-parameter-list', component: _machine_parameter_list_machine_parameter_list_component__WEBPACK_IMPORTED_MODULE_20__["MachineParameterListComponent"] },
     { path: 'total-machine-graphs', component: _total_machine_graphs_total_machine_graphs_component__WEBPACK_IMPORTED_MODULE_21__["TotalMachineGraphsComponent"] },
-    { path: '', redirectTo: '/machine-list', pathMatch: 'full' }
+    { path: '', redirectTo: '/customer-login', pathMatch: 'full' }
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
