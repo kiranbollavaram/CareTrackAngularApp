@@ -1026,15 +1026,15 @@ var MachineService = /** @class */ (function () {
         this._http = _http;
     }
     MachineService.prototype.getMachinelist = function () {
-        return this._http.get('http://caretrack.azurewebsites.net/api/Machine/CUST01')
+        return this._http.get('https://caretrack.azurewebsites.net/api/Machine/CUST01')
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (response) { return response.json(); }));
     };
     MachineService.prototype.getCustomer = function (id) {
-        return this._http.get('http://caretrack.azurewebsites.net/api/CustomerDetails/Cust01', id)
+        return this._http.get('https://caretrack.azurewebsites.net/api/CustomerDetails/Cust01', id)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (response) { return response.json(); }));
     };
     MachineService.prototype.getMachineInformation = function () {
-        return this._http.get('http://caretrack.azurewebsites.net/api/MachineData/1')
+        return this._http.get('https://caretrack.azurewebsites.net/api/MachineData/1')
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (response) { return response.json(); }));
     };
     MachineService = __decorate([
