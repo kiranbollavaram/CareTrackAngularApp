@@ -10,16 +10,16 @@ export class MachineService {
   constructor(private _http: Http) { }
 
   getMachinelist(): Observable<MachineFeatures[]> {
-    return this._http.get('http://caretrack.azurewebsites.net/api/Machine/CUST01')
+    return this._http.get('https://caretrack.azurewebsites.net/api/Machine/CUST01')
                     .pipe(map((response: Response) => <MachineFeatures[]>response.json()));
                   }
   getCustomer(id) {
-    return this._http.get('http://caretrack.azurewebsites.net/api/CustomerDetails/Cust01', id)
+    return this._http.get('https://caretrack.azurewebsites.net/api/CustomerDetails/Cust01', id)
                     .pipe(map((response: Response) => response.json()));
                   }
 
   getMachineInformation():  Observable<MachineFeatures[]> {
-    return this._http.get('http://caretrack.azurewebsites.net/api/MachineData/1')
+    return this._http.get('https://caretrack.azurewebsites.net/api/MachineData/1')
     .pipe(map((response:  Response) => <MachineFeatures[]>response.json()));
    }
   // private handleError (error: Response | any) {
